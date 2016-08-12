@@ -10,7 +10,7 @@
    			<div class="col-twelve">
 
 	   			<div class='video-link'>
-	   				<a href="#video-popup"><img src="images/play-button.png" alt=""></a>
+	   				<a href="#video-popup"><img src="<?php echo get_template_directory_uri(); ?>/images/play-button.png" alt=""></a>
 	   			</div>
 
 	   			<h5><?php  echo $blog_title = get_bloginfo('name'); ?></h5>
@@ -46,14 +46,10 @@
    	<div class="row section-intro">
    		<div class="col-twelve with-bottom-line">
    			<h5><?php echo get_cat_name(2)?></h5>
-			<?php
-			$my_id = 8;
-			$post_id_1 = get_post($my_id);
-			$title = $post_id_1->post_title;
-			echo '<h1>' . $title . '</h1>';
-			?>
-			<p class="lead"> <?php $my_post_obj = get_post (8);
-				echo $my_post_obj->post_content;?> </p>
+			<h1><?php $post_id_1 = get_post(4);
+			echo $post_id_1->post_title;?></h1>
+			<p class="lead"> <?php $my_post_obj = get_post (4);
+			echo $my_post_obj->post_content;?></p>
    		</div>
    	</div>
 

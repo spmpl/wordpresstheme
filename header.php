@@ -22,7 +22,7 @@
 	<script src="js/modernizr.js"></script>
 
 
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 
 </head>
     <body id="top">
